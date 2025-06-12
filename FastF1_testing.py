@@ -28,6 +28,7 @@ def get_most_recent():
         else:
             print(f"{most_recent.EventDate}: {most_recent.Location}, {most_recent.Country}")
             return most_recent
+
             break
 
 def plot_graph(race):
@@ -56,6 +57,13 @@ def plot_graph(race):
 
     plt.savefig(f"graphs/{race.EventDate.year}, {race.Location}")
     plt.show()
+
+
+def single_driver_graph(driver):
+    max = get_most_recent
+
+    for i in range(1, 25):
+
 
 
 
